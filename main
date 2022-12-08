@@ -11,7 +11,7 @@ local data = {
    ["content"] = "",
    ["embeds"] = {
        {
-           ["title"] = "**Script Execution Logged!**",
+           ["title"] = "**HBE Execution Logged!**",
            ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
