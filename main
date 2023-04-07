@@ -39,21 +39,6 @@ if not cclosure or not hookmetamethod then
     plr:Kick("\n\nTest kyno)\n")
 end
 
-local oldNamecall
-oldNamecall = hookmetamethod(game, "__namecall", cclosure(function(self,...)
-    local NamecallMethod = getnamecallmethod()
-    local args = {...}
-    
-    if NamecallMethod:lower() == "kick" and not checkcaller() then
-        if self ~= plr then
-            return oldNamecall(self,...)
-        end
-        return
-    end
-    
-    return oldNamecall(self,...)
-end))
-
 local eventbypass
 
 eventbypass = hookmetamethod(game, "__namecall", function(self, ...)
@@ -185,4 +170,4 @@ hookfunction(collectgarbage,gcinfo)
 -- not mine
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/Bypasses.lua"))()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/yurithegoatnovuh/ui/main/gui",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yurithegoatnovuh/ui/main/gui%22,true))()
